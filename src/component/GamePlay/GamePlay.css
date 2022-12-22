@@ -10,44 +10,19 @@ body {
 .square {
   border: 6px solid #FFE79E;
   float: left;
-  font-size: 40px;
-  height: 105px;
-  width: 105px;
+  font-size: 90px;
+  font-weight: 900; 
+  font-family: 'Varela Round', sans-serif;
+  color: #2C8DFF;
+  height: 106px;
+  width: 106px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
 }
-
-button:hover {
-  cursor: pointer;
-}
-.status, .restart {
-  margin-top: 10px;
+.icon{
+  font-family: 'Varela Round', sans-serif;
 }
 
-/** button styles **/
-.restart {
-  padding: 10px 15px;
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-  border-radius: 0.25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
 
-.restart:active {
-  color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
-}
-
-.restart:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
-}
-
-.restart:focus {
-  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
-}

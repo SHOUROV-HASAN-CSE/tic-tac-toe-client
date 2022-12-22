@@ -10,9 +10,9 @@ const Home = () => {
       <h2 className='text-8xl'>tic tac</h2>
       <h2 className='text-8xl'>toe</h2>
       </div>
-      <Link to='/login'><button className='bg-[#F2C94C] h-14 w-full mx-4 rounded-lg mt-16 text-white font-semibold text-lg'>Login</button></Link>
+      <Link to='/login'><button className='bg-[#F2C94C] h-14 w-full rounded-lg mt-16 text-white font-semibold text-lg'>Login</button></Link>
 
-      <Link to='/signup'><button className='bg-[#2F80ED] h-14 w-full mx-4 rounded-lg mt-4 text-white font-semibold text-lg'>Register</button></Link>
+      <Link to='/signup'><button className='bg-[#2F80ED] h-14 w-full rounded-lg mt-4 text-white font-semibold text-lg'>Register</button></Link>
      </div>
     </div>
   );

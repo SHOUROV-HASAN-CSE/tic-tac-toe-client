@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from "react";
 import * as ReactDOM from 'react-dom';
 import './GamePlay.css'
+import image from '../../assets/images/back.png';
+import cross from '../../assets/icon/x icon.png';
 
 
 
@@ -16,7 +18,7 @@ const GamePlay = () => {
   }
   
   function Board () {
-    const [squares, setSquares] = useState(Array(9).fill(null))
+    const [squares, setSquares] = useState(Array(9).fill(null));
     const [isX, setIsX] = useState(true);
   
     const handleClick = (i) => {
@@ -33,9 +35,9 @@ const GamePlay = () => {
     let status
     
     if (winner) {
-      status = `Winner: ${winner}`;
+      status = `Winner:  ${winner}`;
     } else {
-      status = 'Next player: ' + (isX ? 'your move' : 'O');
+      status = (isX ? 'Your move' : 'Their move');
     }
     
     const handleRestart = () => {
@@ -48,9 +50,16 @@ const GamePlay = () => {
     }
     
     return (
-    
+      <div className='flex justify-center mt-8'>
+        <div>
+        <a href='/newgame'><img className='w-8 md:ml-8' src={image} alt="" /></a>
+        <h1 className='md:ml-8 mt-2 text-3xl font-bold'>Game with Tanmay</h1>
+         <p className='md:ml-8 mt-2 text-sm'>Your piece</p>
+         <p className='icon md:ml-14 ml-3 mt-2 text-5xl text-[#2C8DFF] font-bold'>X</p>
+      
       <div className='md:w-96 w-full md:h-[600px] h-fit flex justify-center'>
       <div className="board">
+      <p className='bg-[#FFE79E] h-14 w-full mt-4 text-center py-5 font-medium'> {status}</p>
         <div className="board-row">
           {renderSquare(0)}
           {renderSquare(1)}
@@ -66,8 +75,9 @@ const GamePlay = () => {
           {renderSquare(7)}
           {renderSquare(8)}
         </div>
-        <div className="status">{status}</div>
-        <button className="restart" onClick={handleRestart}>Restart Game!</button>
+        <button className="bg-[#F2C94C] h-14 w-full rounded-lg mt-6 text-white font-semibold text-lg" onClick={handleRestart}>Restart Game!</button>
+      </div>
+      </div>
       </div>
       </div>
     )
