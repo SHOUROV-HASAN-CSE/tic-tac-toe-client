@@ -27,7 +27,7 @@ const SignUp = () => {
             form.reset();
             handleUpdateUserProfile(username, name);
             console.log(user);
-            navigate('/');
+            navigate('/gameshome');
         })
         .catch(error => {console.error(error);
         })
@@ -57,25 +57,25 @@ const SignUp = () => {
       <form onSubmit={handleSignUp} className="card-body">
                           <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Your name</span>
+                                <span className="label-text font-bold">Your name</span>
                             </label>
                             <input type="text" name='name' placeholder="Type your name here" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">User name</span>
+                                <span className="label-text font-bold">User name</span>
                             </label>
                             <input type="text" name='username' placeholder="Type your username here" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text font-bold">Email</span>
                             </label>
                             <input type="email" name='email' placeholder="Type your email here" className="input input-bordered" required/>
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text font-bold">Password</span>
                             </label>
                             <input type="password" name='password' placeholder="Type your password here" className="input input-bordered mb-4" required/>
                         </div>
