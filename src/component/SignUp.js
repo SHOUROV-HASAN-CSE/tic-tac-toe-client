@@ -82,7 +82,7 @@ const SignUp = () => {
                             </label>
                             <input type="password" name='password' placeholder="Type your password here" className="input input-bordered mb-4" required/>
                         </div>
-                        <button className=' bg-[#6FCF97] h-[74px] w-full rounded-lg text-white text-sm'>Congratulations!!! Account created.</button>
+                        <button className='hidden bg-[#6FCF97] h-[74px] w-full rounded-lg text-white text-sm'>Congratulations!!! Account created.</button>
                         <div className="form-control mt-6">
                             <input className="bg-[#F2C94C] h-14 w-full  rounded-lg text-white font-semibold text-lg" type="submit" value="Register"/>
                         </div>

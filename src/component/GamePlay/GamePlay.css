@@ -8,16 +8,17 @@ body {
   display: table;
 }
 .square {
-  border: 1px solid #999;
+  border: 6px solid #FFE79E;
   float: left;
   font-size: 40px;
-  height: 80px;
+  height: 105px;
+  width: 105px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 80px;
 }
+
 button:hover {
   cursor: pointer;
 }
