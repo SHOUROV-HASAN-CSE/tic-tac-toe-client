@@ -1,5 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
+import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import image from '../assets/images/back.png';
 import { AuthContext } from '../contexts/AuthProvider/AuthProvider';
@@ -27,9 +28,11 @@ const SignUp = () => {
             form.reset();
             handleUpdateUserProfile(username, name);
             console.log(user);
+            toast.success('Congratulations!!! Account created.');
             navigate('/gameshome');
         })
         .catch(error => {console.error(error);
+            toast.error(error.message);
         })
     
 
@@ -52,7 +55,7 @@ const SignUp = () => {
       <div className='md:w-96 w-full md:h-[600px] h-fit'>
         <Link to='/'><img className='w-8 ml-8' src={image} alt="" /></Link>
         <p className='ml-8 font-semibold'>Create account</p>
-        <h1 className='ml-8 text-3xl font-semibold'>Let’s get to know <br /> you better!</h1>
+        <h1 className='ml-8 text-3xl font-bold'>Let’s get to know <br /> you better!</h1>
         
       <form onSubmit={handleSignUp} className="card-body">
                           <div className="form-control">
