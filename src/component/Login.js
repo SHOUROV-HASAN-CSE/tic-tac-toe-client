@@ -53,7 +53,7 @@ const Login = () => {
                          <button className='hidden bg-[#EB5757] h-[74px] w-full rounded-lg text-white text-sm'>Enter correct details.</button>
 
                         <div className="form-control mt-2">
-                            <input className="bg-[#F2C94C] h-14 w-full rounded-lg text-white font-semibold text-lg" type="submit" value="Login" />
+                            <input className="bg-[#F2C94C] h-14 w-full mt-20 rounded-lg text-white font-semibold text-lg" type="submit" value="Login" />
                         </div>
                     </form>
       </div>

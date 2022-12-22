@@ -5,6 +5,7 @@ import Home from "../component/Home";
 import Login from "../component/Login";
 import NewGame from "../component/NewGame";
 import SignUp from "../component/SignUp";
+import YourGame from "../component/YourGame";
 import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path:'/gameplay',
     element:<PrivateRoute><GamePlay/></PrivateRoute>
+  },
+  {
+    path:'/yourgame',
+    element:<PrivateRoute><YourGame/></PrivateRoute>
   },
   
 ])

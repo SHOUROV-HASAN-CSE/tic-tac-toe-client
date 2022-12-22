@@ -10,7 +10,7 @@ const GamesHome = () => {
      <h2 className='text-7xl mb-8'>No Games</h2>
      <h2 className='text-7xl'>Found</h2>
      </div>
-     <Link to='/newgame'><button className='bg-[#F2C94C] h-14 w-full rounded-lg mt-16 text-white font-semibold text-lg'>Start a new game</button></Link>
+     <Link to='/newgame'><button className='bg-[#F2C94C] h-14 w-full rounded-lg mt-48 text-white font-semibold text-lg'>Start a new game</button></Link>
     </div>
    </div>
   );

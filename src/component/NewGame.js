@@ -8,7 +8,7 @@ const NewGame = () => {
 
 const handleStartGame = event =>{
   event.preventDefault();
-  navigate('/gameplay');
+  navigate('/yourgame');
 };
 
   return (
@@ -27,7 +27,7 @@ const handleStartGame = event =>{
                         </div>
                        
                         <div className="form-control mt-6">
-                          <input className="bg-[#F2C94C] h-14 w-full  rounded-lg text-white font-semibold text-lg mt-48" type="submit" value="Start a new game"/>
+                          <input className="bg-[#F2C94C] h-14 w-full rounded-lg text-white font-semibold text-lg mt-48" type="submit" value="Start a new game"/>
                         </div>
                     </form>
     </div>

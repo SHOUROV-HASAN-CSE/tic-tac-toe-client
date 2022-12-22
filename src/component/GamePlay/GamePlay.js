@@ -3,8 +3,6 @@ import { useState } from "react";
 import * as ReactDOM from 'react-dom';
 import './GamePlay.css'
 import image from '../../assets/images/back.png';
-import cross from '../../assets/icon/x icon.png';
-
 
 
 const GamePlay = () => {
